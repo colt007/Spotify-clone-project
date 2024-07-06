@@ -1,0 +1,100 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify - Music Player</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="left-banner">
+            <img class="left-img" alt="left-banner-img">
+            <div class="heading">
+                <h1>On Repeat</h1>
+                <p>Songs you love right now!</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-section">
+
+        <div class="controls" onclick="playaudio()" id="play-pause"><img  class="play-button"src="images/play-button.svg" alt="play-image"></div>
+
+        <audio id="song"></audio>
+
+        <table>
+            <thead>
+                <th class="song-number">#</th>
+                <th class="song-title">Title</th>
+                <th class="song-artist">Artist</th>
+                <th class="song-duration">Duration</th>
+            </thead>
+            <tr id="song1" onclick="playAll(1)">
+                <td>1</td>
+                <td>Chinnama Chilakamma</td>
+                <td>A.R.Rahman,Benny Dayal,Chinmayi</td>
+                <td>5:35</td>
+              </tr>
+              <tr id="song2" onclick="playAll(2)">
+                <td>2</td>
+                <td>Alaikadal</td>
+                <td>A.R.Rahman,Antara Nandy</td>
+                <td>05:14</td>
+              </tr>
+              <tr id="song3" onclick="playAll(3)">
+                <td>3</td>
+                <td>Sunflower-Spiderman:Into The Spider-Verse</td>
+                <td>Post Malone,Swae Lee</td>
+                <td>02:38</td>
+              </tr>
+              <tr id="song4" onclick="playAll(4)">
+                <td>4</td>
+                <td>cowboy like me</td>
+                <td>Taylor Swift</td>
+                <td>04:35</td>
+              </tr>
+              <tr id="song5" onclick="playAll(5)">
+                <td>5</td>
+                <td>gold rush</td>
+                <td>Taylor Swift</td>
+                <td>03:05</td>
+              </tr>
+              <tr id="song6" onclick="playAll(6)">
+                <td>6</td>
+                <td>Yela Yelo</td>
+                <td>Bharath Sankar,Arivu</td>
+                <td>02:50</td>
+              </tr>
+              <tr id="song7" onclick="playAll(7)">
+                <td>7</td>
+                <td>Simple Song</td>
+                <td>The Shins</td>
+                <td>04:15</td>
+              </tr>
+              <tr id="song8" onclick="playAll(8)">
+                <td>8</td>
+                <td>the lakes</td>
+                <td>Taylor Swift</td>
+                <td>03:31</td>
+              </tr>
+              <tr id="song9" onclick="playAll(9)">
+                <td>9</td>
+                <td>Idhu Varai</td>
+                <td>Yuvan Shankar Raja,Ajesh,Andrea Jeremiah</td>
+                <td>04:44</td>
+              </tr>
+              <tr id="song10" onclick="playAll(10)">
+                <td>10</td>
+                <td>Shake It Out</td>
+                <td>Florence + The Machine</td>
+                <td>04:37</td>
+              </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
